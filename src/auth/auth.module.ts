@@ -9,7 +9,7 @@ import { AuthService } from './auth.service';
 import { UserRepositoryModule } from '../persistence/user/usersRepository.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { FileUploadService } from './file.upload.service';
-import { DomainModule } from '../domain/Domain.module';
+import { DomainModule } from '../domain/domain.module';
 
 @Module({
   imports: [UserRepositoryModule, DomainModule, PassportModule, JwtModule.registerAsync({
