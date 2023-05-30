@@ -21,7 +21,7 @@ export class FlightController {
     }
 
     @Post() 
-    public async create(@Body() flightDto: FlightDto) {            console.log(flightDto);
+    public async create(@Body() flightDto: FlightDto) {            
             return await this.createFlight.Create(flightDto);
     }
 
